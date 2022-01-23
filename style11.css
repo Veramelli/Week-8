@@ -1,0 +1,254 @@
+@font-face {
+    font-family: 'Intro';
+    src: url('/assets/font/Intro/Intro\ Regular.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.header {
+    display: flex;
+    height: 40px;
+    background-image: url(/assets/img/browser.png);
+    background-repeat: no-repeat;
+}
+
+.header__advantages,
+.header__buyng {
+    padding-left: 8rem;
+    align-self: center;
+    font-style: normal;
+    font-family: Helvetica, arial, sans-serif;
+    font-size: 1.25rem;
+    color: #5222D0;
+
+}
+
+.header__advantages--link,
+.header__buyng--link {
+    text-decoration: none;
+}
+
+.subtitle {
+    padding-top: 90px;
+    padding-left: 5rem;
+    display: flex;
+    height: 2.6rem;
+
+}
+
+.subtitle__logo--circle {
+    width: 2.6rem;
+    background-image: url(/assets/img/Ellipse6.png), url(/assets/img/Ellipse3.png);
+    background-repeat: no-repeat, no-repeat;
+    background-position: top left, bottom right;
+    mix-blend-mode: multiply;
+    background-blend-mode: darken;
+}
+
+.subtitle__logo--viar {
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+    width: 10rem;
+}
+
+.subtitle__cart {
+    margin-left: 40rem;
+    width: 8rem;
+}
+
+.subtitle__cart--violet {
+    height: 2rem;
+    width: 8rem;
+    background-color: #5222D0;
+    border-radius: 5rem;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    text-align: center;
+    color: seashell;
+}
+
+.section {
+    margin-left: 5rem;
+    margin-right: 5rem;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 10rem 1fr 10rem;
+    gap: 10px;
+    grid-template-areas:
+        "tit tit tit"
+        "fir sec thr"
+        "fo fi si";
+
+}
+
+.section__title {
+
+    grid-area: tit;
+    padding-top: 2rem;
+    font-family: Intro, Arial, Helvetica, sans-serif;
+    font-size: xx-large;
+}
+
+.section__first {
+    grid-area: fir;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 10rem;
+    grid-template-areas:
+        "back"
+        "txt";
+
+    justify-items: center;
+}
+
+.section__second {
+    grid-area: sec;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 10rem;
+    grid-template-areas:
+        "back"
+        "txt";
+
+    justify-items: center;
+}
+
+.section__third {
+    grid-area: thr;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 10rem;
+    grid-template-areas:
+        "back"
+        "txt";
+
+    justify-items: center;
+}
+
+.section__fourth {
+    grid-area: fo;
+}
+
+.section__fifth {
+    grid-area: fi;
+}
+
+.section__sixth {
+    padding-left: 2rem;
+    grid-area: si;
+    background-color: #EC615B;
+    font-size: larger;
+
+}
+
+.first__background {
+    width: 365px;
+    height: 265px;
+    grid-area: back;
+
+    background-image: url(/assets/img/praktikum3_1.png), url(/assets/img/Rectangle11.png);
+    background-repeat: no-repeat, no-repeat;
+    mix-blend-mode: multiply;
+    background-position: top center;
+}
+
+.first__text {
+    grid-area: txt;
+    padding-left: 3.2rem;
+    padding-right: 3.2rem;
+    text-align: start;
+
+}
+
+.second__background {
+    width: 365px;
+    height: 278px;
+    grid-area: back;
+
+    background-image: url(/assets/img/praktikum21.png), url(/assets/img/Rectangle11.png);
+    background-repeat: no-repeat, no-repeat;
+    mix-blend-mode: multiply;
+    background-position: top center;
+}
+
+.second__text {
+    grid-area: txt;
+    padding-left: 3.2rem;
+    padding-right: 3.2rem;
+    text-align: start;
+}
+
+.third__background {
+    width: 365px;
+    height: 278px;
+    grid-area: back;
+
+    background-image: url(/assets/img/praktikum11.png), url(/assets/img/Rectangle11.png);
+    background-repeat: no-repeat, no-repeat;
+    mix-blend-mode: multiply;
+    background-position: top center;
+}
+
+.third__text {
+    grid-area: txt;
+    padding-left: 3.2rem;
+    padding-right: 3.2rem;
+    text-align: start;
+}
+
+.fourth__text {
+    padding-left: 3.2rem;
+    padding-right: 3.2rem;
+    text-align: start;
+}
+
+.fifth__text {
+    padding-left: 3.2rem;
+    padding-right: 3.2rem;
+    text-align: start;
+}
+
+.sixth__news {
+    color: snow;
+}
+
+.sixth__button {
+    background-color: #5222D0;
+    border-radius: 5rem;
+    color: snow;
+}
+
+.text__title {
+    font-family: Intro, Arial, Helvetica, sans-serif;
+}
+
+.container__footer {
+    height: 2rem;
+    padding-top: 1rem;
+    padding-left: 5rem;
+    display: grid;
+    grid-template-columns: (4, 1fr);
+    grid-template-rows: 1fr;
+    gap: 5rem;
+    grid-template-areas:
+        "op buy dl hp";
+    justify-content: start;
+}
+
+.container__footer--opport {
+    grid-area: op;
+}
+
+.container__footer--buy {
+    grid-area: buy;
+}
+
+.container__footer--deliv {
+    grid-area: dl;
+}
+
+.container__footer--help {
+    grid-area: hp;
+}
